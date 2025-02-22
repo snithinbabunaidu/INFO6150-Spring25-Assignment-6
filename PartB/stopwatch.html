@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles/stopwatch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <div class="display-container">
+                <div class="display">
+                    <div class="time-section">
+                        <div class="total-time" id="totalTime">00:00:00.00</div>
+                    </div>
+                    <div class="date-section">
+                        <input type="date" id="datePicker" class="date-picker">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="startBtn" class="control-btn start">Start</button>
+                <button id="stopBtn" class="control-btn stop" disabled>Stop</button>
+                <button id="resetBtn" class="control-btn reset" disabled>Reset</button>
+            </div>
+
+            <div class="laps-container">
+                <div class="laps-header">
+                    <span>Lap</span>
+                    <span>Lap Time</span>
+                    <span>Total Time</span>
+                </div>
+                <div class="laps" id="lapsDisplay"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/stopwatch.js"></script>
+</body>
+</html>
